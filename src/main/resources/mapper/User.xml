@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test.business.mapper.UserMapper">
+    <select id="selectAllExcept" resultType="test.business.model.User">
+        SELECT * FROM users WHERE username != #{username}
+    </select>
+</mapper>
