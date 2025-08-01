@@ -11,11 +11,13 @@ public class Message {
     private MessageType type;
     private String username;
     private String content;
+    private String timestamp;
 
-    public Message(MessageType type, String username, String content) {
+    public Message(MessageType type, String username, String content, String timestamp) {
         this.type = type;
         this.username = username;
         this.content = content;
+        this.timestamp = timestamp;
     }
 
     public MessageType getType() {
